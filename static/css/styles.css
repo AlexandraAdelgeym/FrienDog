@@ -1,0 +1,115 @@
+body{
+    background-color: #F7F4E3;
+    font-family: "Exo 2";
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    margin-top: 130px;
+    
+}
+.header{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    margin-top: 60px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.log-in-sign-up-btn {
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    width: 170px;
+    font-size: 16px;
+    font-weight: 500;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+
+}
+
+
+.main-title-first-part{
+    font-size: 80px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.main-get-started-btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 12px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+}
+
+.cursor-icon{
+    height: 50px;
+    transform: translateY(-100%) translateX(100%);
+
+}
+
+.main-get-started-btn{
+    font-size: 20px;
+    padding-left: 30px;
+    padding-right: 180px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-right: 400px;
+    border: none;
+    background-color: #F9C4AA;
+    color: black;
+    border-radius: 15px;
+}
+
+.moving-title {
+    display: flex;
+}
+
+.main-title-second-part-static, .main-title-second-part-dynamic{
+    font-size: 60px;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.main-title-second-part-dynamic::after{
+    animation: typing 2s steps(14) 1 forwards;
+    content: "";
+    position: absolute;
+    left:0;
+    height: 70px;
+    width: 100%;
+    background-color: #F7F4E3;
+    border-left: 2px solid #F9C4AA;
+}
+
+.main-subtitle{
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 40px;
+    opacity: 0.7;
+}
+
+@keyframes typing {
+    0%{
+        left: 46%;
+    }
+    100%{
+        left: 71%;
+        margin: 0 -35px 0 35px;
+    }
+    
+}
