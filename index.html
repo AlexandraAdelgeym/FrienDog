@@ -29,18 +29,15 @@
         </button>
     </div>
     <img class="cursor-icon" src="static/css/img/click.png">
-    <div class="moving-title">
-        <div class="main-title-second-part-static">
-            для себя и
-        </div>
-        <div class="main-title-second-part-dynamic">
-             своей собаки 
-        </div>
-    </div>
+    <h2 class="moving-title">для себя и свое<span class="auto-type">й собаки</span></h2>
     <div class="main-subtitle">
         Познакомься с классными людьми и их питомцами рядом с тобой 
     </div>
 </main>
 <script src="scripts/friendog.js"></script>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+    let typed = new Typed(".auto-type", {strings : ["го Шарика", "й Жучки", "го Тузика", "й собаки"], typeSpeed : 150, backSpeed: 150});
+</script>
 </body>
 </html>
