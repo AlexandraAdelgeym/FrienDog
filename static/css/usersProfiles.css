@@ -4,6 +4,8 @@ body{
     display: flex;
     flex-direction: column;
     margin-bottom: 70px;
+    padding: 0px;
+    overflow-x: hidden;
 
 }
 
@@ -11,7 +13,7 @@ header{
     display: flex;
     justify-content: space-between; 
     align-items: center; 
-    margin-top: 0px;
+    margin-top: 40px;
     margin-left: 200px;
     margin-right: 200px;
 }
@@ -27,13 +29,40 @@ header{
 
 .sticker-dog{
     height: 150px;
-    transform: translateY(60%);
+    position: absolute;
+    top: 120px;
+    right: 450px;
 }
 .user-profile-photo-container{
     height: 50px;
     width: 50px;
-    background-color: blueviolet;
     border-radius: 25px;
+    overflow: hidden;
+    transform: translateX(100%);
+}
+
+.user-profile-photo{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.filters-hint {
+    font-weight: 600;
+    width: 220px;
+    position: absolute;
+    top: 200px;
+    right: 5px;
+    
+}
+
+.dashed-arrow{
+    height: 80px;
+    transform: rotate(200deg);
+    position: absolute;
+    top: 100px;
+    right: 90px;
+
 }
 
 .second-container {
@@ -44,7 +73,7 @@ header{
 .slider {
     display: flex;
     width: 600px;
-    margin-top: 70px;
+    margin-top: 150px;
     overflow-x: scroll;
     -webkit-mask: linear-gradient(90deg,#0000,#000 10% 90%,#0000);
 }
@@ -83,15 +112,64 @@ header{
 #backBtn, #nextBtn {
     width: 60px;
     cursor: pointer;
-    margin: 120px;
+    margin: 100px;
 }
 
 #nextBtn{
     transform: scaleX(-1);
 }
 
+#backBtn{
+    margin-left: 300px;
 
-#sticker-dog-catch-me{
-    height: 150px;
-    transform: translateX(70%);
 }
+
+
+#sticker-dog-o-my{
+    height: 200px;
+    position: absolute;
+    left: 90px;
+    top: 450px;
+}
+
+.filter-icon{
+    height: 40px;
+
+}
+
+.filters-button{
+    height: 60px;
+    width: 60px;
+    background: #D2E1C8;
+    border: none;
+    cursor: pointer;
+}
+
+
+#sidebar {
+    position: absolute;
+    top: 50px;
+    width: 250px;
+    height: 500px;
+    background: #bbcdb0;
+    border-radius: 15px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    right: -350px;
+    padding: 20px;
+  }
+
+#sidebar.active {
+    right: 260px;
+  }
+
+.filters-title{
+    font-size: 30px;
+    font-weight: 600;;
+    margin-bottom: 40px;
+}
+
+.filters{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+

@@ -16,3 +16,13 @@ nextBtn.addEventListener("click", () => {
 backBtn.addEventListener("click", () => {
     scrollContainer.scrollLeft -= 400;
 })
+
+
+function show() {
+    document.getElementById("sidebar").classList.toggle("active");
+    console.log("Hello, world!");
+
+}
+
+
+

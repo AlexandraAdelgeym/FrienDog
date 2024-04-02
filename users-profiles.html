@@ -17,19 +17,22 @@
             FrienDog
         </div>
         <div class="manual">
-            Крути вниз, чтобы увидеть все профили
+            Крути вверх, чтобы увидеть все профили
         </div>
         <div class="dog-sticker-container">
             <img class="sticker-dog" src="static/img/sticker-dog.png">
         </div>
         
         <div class="user-profile-photo-container">
-            <img class="user-profile-photo" src="#">
+            <img class="user-profile-photo" src="static/img/profile-img.jpg">
         </div>
+        <button class="filters-button" onclick="show()">
+            <img class="filter-icon" src="static/img/filter-icon.png">
+        </button>
     </header>
     <div class="second-container">
         <div class="slider-wrapper">
-            <img id="sticker-dog-catch-me" src="static/img/ticker-dog-catch-me.png">
+            <img id="sticker-dog-o-my" src="static/img/sticker-dog-o-my.png">
             <img id="backBtn" src="static/img/back-arrow.png">
             
             <div class="slider">
@@ -46,10 +49,24 @@
                 </div>          
             </div>
             <img id="nextBtn" src="static/img/back-arrow.png">
+            <p class="filters-hint">
+                Нажми сюда, чтобы выбрать фильтры
+            </p>
+            <img class="dashed-arrow" src="static/img/dashed-arrow.png">
         </div>
-        
     </div>
-    
+    <div class="sidebar-container">
+        <div id="sidebar">
+            <div class="filters-title">фильтры</div>
+            <div class="filters">расстояние</div>
+            <div class="filters">возраст</div>
+            <div class="filters">пол</div>
+            <div class="filters">размер собаки</div>
+            <div class="filters">пол собаки</div>
+            <div class="filters">возраст собаки</div>
+            <div class="filters">порода собаки</div>
+        </div>  
+    </div> 
 <script src="scripts/usersProfiles.js"></script>
 </body>
 </html>
