@@ -24,7 +24,7 @@
         </div>
         
         <div class="user-profile-photo-container">
-            <img class="user-profile-photo" src="static/img/profile-img.jpg">
+            <img class="user-profile-photo" onclick="toggleMenu()" src="static/img/profile-img.jpg" >
         </div>
         <button class="filters-button" onclick="show()">
             <img class="filter-icon" src="static/img/filter-icon.png">
@@ -67,6 +67,39 @@
             <div class="filters">порода собаки</div>
         </div>  
     </div> 
+    <div class="sub-menu-wrap" id="subMenu">
+        <div class="sub-menu">
+            <div class="user-info">
+                <div class="user-profile-photo-container">
+                    <img class="user-profile-photo" src="static/img/profile-img.jpg">
+                </div>
+                <div class="user-name">Банчан</div>
+            </div>
+            <hr>
+            <a href="#" class="sub-menu-link">
+                <img src="static/img/profile-icon.png">
+                <p>Редактировать профиль</p>
+                <span>></span>
+            </a>
+            <a href="#" class="sub-menu-link">
+                <img src="static/img/icon-settings.png">
+                <p>Настройки и конфиденциальность</p>
+                <span>></span>
+            </a>
+            <a href="#" class="sub-menu-link">
+                <img src="static/img/icon-help.png">
+                <p>Поддержка</p>
+                <span>></span>
+            </a>
+            <a href="#" class="sub-menu-link">
+                <img src="static/img/icon-log-out.png">
+                <p>Выход</p>
+                <span>></span>
+            </a>
+        </div>
+    </div>
+    
+    
 <script src="scripts/usersProfiles.js"></script>
 </body>
 </html>

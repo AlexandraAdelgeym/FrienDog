@@ -20,9 +20,10 @@ backBtn.addEventListener("click", () => {
 
 function show() {
     document.getElementById("sidebar").classList.toggle("active");
-    console.log("Hello, world!");
-
 }
 
+function toggleMenu() {
+    document.getElementById("subMenu").classList.toggle("open-menu");
+}
 
 
