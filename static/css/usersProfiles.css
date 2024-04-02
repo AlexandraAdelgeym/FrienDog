@@ -1,0 +1,107 @@
+body{
+    background-color: #F7F4E3;
+    font-family: "Exo 2";
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 70px;
+
+}
+
+header{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    margin-top: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.manual {
+    font-weight: 600;
+    transform: translateX(14%);
+}
+
+.user-profile-photo-container{
+    height: 50px;
+    width: 50px;
+    background-color: blueviolet;
+    border-radius: 25px;
+}
+
+.second-container {
+    display: flex;
+}
+
+
+.filters {
+    margin-left: 200px;
+    margin-top: 80px;
+    margin-right: 100px;
+    background-color: white;
+    border-radius: 15px;
+    padding-left: 20px;
+    padding-top: 20px;
+    height: 482px;
+}
+
+.filter {
+    width: 200px;
+    margin-top: 30px;
+}
+
+.filters-title{
+    font-size: 23px;
+    margin-bottom: 40px;
+}
+.slider {
+    display: flex;
+    width: 600px;
+    margin-top: 70px;
+    overflow-x: scroll;
+    -webkit-mask: linear-gradient(90deg,#0000,#000 10% 90%,#0000);
+}
+
+.slider::-webkit-scrollbar{
+    display: none;
+}
+
+.slider-container{
+    width: 200%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    padding: 10px;
+    flex: none;
+}
+
+.card {
+    background-color: rgb(255, 255, 255);
+    width: 300px;
+    border-radius: 15px;
+    display: grid;
+    text-align: center;
+}
+
+.slider-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 50px;
+}
+
+
+#backBtn, #nextBtn {
+    width: 60px;
+    cursor: pointer;
+    margin: 40px;
+}
+
+#nextBtn{
+    transform: scaleX(-1);
+}
