@@ -47,6 +47,7 @@ header{
     padding-left: 20px;
     padding-top: 20px;
     height: 482px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .filter {
@@ -86,6 +87,7 @@ header{
     border-radius: 15px;
     display: grid;
     text-align: center;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .slider-wrapper{
