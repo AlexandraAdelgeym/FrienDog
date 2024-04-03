@@ -98,6 +98,7 @@ main {
 .between-containers-prints-image{
     width: 12rem;
     transform: rotate(212deg);
+    opacity: 0.8;
 
 }
 .second-container{
@@ -133,9 +134,11 @@ main {
 }
 
 
+
 .third-container{
-    margin-top: 5em;
+    margin-top: 4em;
     text-align: center;
+    margin-bottom: 5em;
 }
 
 
@@ -230,4 +233,21 @@ animation-delay: 0.4s;
     transform: translateX(185%) translateY(108%) rotate(200deg);
     width: 12rem;
     position: absolute;
+}
+
+
+.bottom-button-container{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin-right: 18em;
+    margin-left: 5em;
+    margin-bottom: 10em;
+}
+
+.right-click-icon{
+    width: 4rem;
+    transform: rotate(100deg) translateY(260%) translateX(70%);
+    position: absolute;
+
 }
