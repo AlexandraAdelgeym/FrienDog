@@ -1,90 +1,83 @@
 body{
     background-color: #F7F4E3;
     font-family: "Exo 2";
-    margin: 0px;
+    margin: 0;
+    padding: 0;
 
+}
+
+.header{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    margin: 3em 8em;
 }
 
 main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    text-align: center; 
-    margin-top: 130px;
-    
-}
-.header{
-    display: flex;
-    justify-content: space-between; 
-    align-items: center; 
-    margin-top: 50px;
-    margin-left: 200px;
-    margin-right: 200px;
+    align-items: center;   
+    text-align: center;
+    margin: 7em; 
 }
 
+
 .logo {
-    font-size: 30px;
+    font-size: 2rem;
     font-weight: 600;
 }
 
 .log-in-sign-up-btn {
     background-color: white;
     border: none;
-    border-radius: 10px;
-    height: 40px;
-    width: 170px;
-    font-size: 16px;
-    font-weight: 500;
+    border-radius: 3rem;
+    height: 3rem;
+    width: 8rem;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    font-size: 0.9rem;
+    cursor: pointer;
 
 }
 
-
-.main-title-first-part{
-    font-size: 80px;
-    font-weight: 600;
-    margin-bottom: 40px;
-}
-
-.main-get-started-btn-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.main-button-container{
     background-color: white;
-    padding: 12px;
-    border-radius: 15px;
-    margin-bottom: 0px;
+    border-radius: 3rem;
+    height: 4rem;
+    width: 24rem;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: left;
+
 }
 
 .cursor-icon{
-    height: 50px;
+    height: 2.5rem;
     transform: translateY(-50%) translateX(290%);
 
 }
 
 .main-get-started-btn{
-    font-size: 20px;
-    padding-left: 30px;
-    padding-right: 180px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    margin-right: 400px;
+    font-size: 1.5rem;
     border: none;
     background-color: #F9C4AA;
     color: black;
-    border-radius: 15px;
+    border-radius: 3rem;
+    height: 4rem;
+    width: 14rem;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
 
 .main-subtitle{
-    font-size: 30px;
+    font-size: 2rem;
     font-weight: 500;
-    margin-top: 20px;
     opacity: 0.7;
+    margin: 1em 2em;
 }
 
-.moving-title{
-    font-size: 50px;
-    margin-top: 0;
+.moving-title, .main-title{
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5em;
 }
 
