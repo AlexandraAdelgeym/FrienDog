@@ -59,7 +59,7 @@ main {
 .main-get-started-btn{
     font-size: 1.5rem;
     border: none;
-    background-color: #F9C4AA;
+    background-color: #EA907A;
     color: black;
     border-radius: 3rem;
     height: 4rem;
@@ -75,9 +75,159 @@ main {
     margin: 1em 2em;
 }
 
+.highlight{
+    color: #e16647;
+}
+
 .moving-title, .main-title{
     font-size: 3.5rem;
     font-weight: 600;
     margin-bottom: 0.5em;
 }
 
+.between-containers-images{
+    display: flex;
+    width: 70%;
+    justify-content: center;
+}
+
+.between-containers-dog-image{
+    width: 12rem;
+}
+
+.between-containers-prints-image{
+    width: 12rem;
+    transform: rotate(212deg);
+
+}
+.second-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+    text-align: center;
+    margin-top: 4em;
+    margin-inline: 5em;
+
+}
+
+.second-title, .third-title{
+    font-size: 2.3rem;
+    font-weight: 600;
+    margin-bottom: 0.5em;
+}
+
+.second-subtitle{
+    font-size: 1.5rem;
+    font-weight: 500;
+    opacity: 0.7;
+    margin: 1em;
+}
+
+.app-scrins-container{
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.7);    
+    height: 600px;
+    border-radius: 3rem;
+    margin: 5em;
+}
+
+
+.third-container{
+    margin-top: 5em;
+    text-align: center;
+}
+
+
+.steps {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    margin-top: 4em;
+  }
+  
+  .step {
+    display: flex;
+    flex-direction: column;
+    width: 25%; 
+    padding: 1em;
+  }
+
+
+@media (max-width: 900px) {
+    .steps {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .step {
+        width: 80%; 
+        margin-bottom: 2em; 
+      }
+} 
+
+.step:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 1.2rem;
+}
+
+.icon-title-container{
+    display: flex;
+    align-items: center;
+   
+}
+
+.step-icon {
+    width: 3rem;
+    margin: 1em;
+}
+
+.step-title{
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-align: left;
+    border-bottom: 0.10rem solid #EA907A;
+    padding: 0.30em;
+}
+
+.step-body{
+    font-size: 1.3rem;
+    margin: 1em;
+    text-align: left;
+    line-height: 1.7rem;
+}
+
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0); 
+    }
+    50% {
+        transform: translateY(-7px); 
+    }
+}
+
+.dot {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background-color:#e16647;
+    border-radius: 50%;
+    margin: 0.12em; 
+    animation: bounce 1s infinite; 
+}
+
+.dot:nth-child(1) {
+    animation-delay: 0.2s; 
+}
+  
+.dot:nth-child(2) {
+animation-delay: 0.4s; 
+}
+
+.first-prints-image {
+    opacity: 0.5;
+    transform: translateX(185%) translateY(108%) rotate(200deg);
+    width: 12rem;
+    position: absolute;
+}
